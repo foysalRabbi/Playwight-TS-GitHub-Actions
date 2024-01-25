@@ -1,13 +1,14 @@
-name: Trigger Build
+name: Playwright github action e2e test
 on:
   push:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
 jobs:
-  test:
+  PlaywrightTest:
     timeout-minutes: 60
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
+    
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
@@ -15,10 +16,13 @@ jobs:
         node-version: '18.x'
     - name: Install dependencies
       run: npm ci
+
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
+
     - name: Run Playwright tests
       run: npx playwright test
+
     - uses: actions/upload-artifact@v3
       if: always()
       with:
@@ -33,9 +37,9 @@ jobs:
         server_port: ${{ secrets.SMTP_PORT }}
         username: ${{ secrets.EMAIL_USERNAME }}
         password: ${{ secrets.EMAIL_PASSWORD }}
-        subject: "Playwright Test Report for ${{ github.repository}}"
         from: foysal134038@gmail.com 
         to: shakhawat.swe@gmail.com
+        subject: "Playwright Test Report for ${{ github.repository}}"
         body: |
             Hi,
 
