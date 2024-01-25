@@ -25,3 +25,24 @@ jobs:
         name: Test Report
         path: playwright-report/
         retention-days: 30
+
+    - name: Send email notification
+      uses: dawidd6/action-send-mail@v1
+      with:
+        server_address: ${{ secrets.SMTP_SERVER }}
+        server_port: ${{ secrets.SMTP_PORT }}
+        username: ${{ secrets.EMAIL_USERNAME }}
+        password: ${{ secrets.EMAIL_PASSWORD }}
+        subject: "Playwright Test Report for ${{ github.repository}}"
+        from: foysal134038@gmail.com 
+        to: shakhawat.swe@gmail.com
+        body: |
+            Hi,
+
+            Here is the test report for the latest commit on the main branch.
+
+            [Include the content or link to your test report here.]
+
+            Best regards,
+            Rehan Khan
+
