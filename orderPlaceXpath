@@ -1,0 +1,27 @@
+orderPlace.clickTeamStoreInPublicSite()    await page.getByRole('link', { name: 'Team Stores' }).click();
+orderPlace.teamStoreNameInputInSearchBox()  //input[@id="forums-small-searchterms"]
+orderPlace.clickSearchBtn()   //button[text()="search"]
+orderPlace.clickTeamStoreName()  //A[TEXT()="HEADSTRONG LEHIGH"]
+orderPlace.productDetailsPage()   //a[text()="headstrong shooting shirt"]
+
+Verify all field fill up with valid information:
+orderPlace.groupSelect()  
+orderPlace.nameInput()    
+orderPlace.numberInput()   
+orderPlace.sizeSelect()   
+
+Verify user able to add to cart:
+orderPlace.quantityInput()
+orderPlace.addToCart()  
+orderPlace.shoppingCartBtn()
+orderPlace.termsOfServiceCheckboxClick()   //input[@id='termsofservice']
+
+Verify user able to checkout all steps
+orderPlace.clkCheckout()    //button[@id='checkout']
+orderPlace.billingAddress()  //button[@name='save']
+orderPlace.shippingAddress()
+orderPlace.shippingMethod()  //button[text()='continue']
+orderPlace.paymentMethod()   //button[@name='save']
+orderPlace.paymentInformation()  //button[@name='save']
+orderPlace.confirmOrder()       //button[text()='confirm']
+orderPlace.orderSuccessfullyMessage()  //a[text()='Click here for order details.']

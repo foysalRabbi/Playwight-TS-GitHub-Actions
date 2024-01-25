@@ -1,0 +1,94 @@
+
+Create a team store: 
+----------------------------->>   
+
+
+   async clickCSRAdmin(){
+
+   }
+
+    async clickTeamStore(){
+
+   }
+
+     async teamStoreName(){
+         
+     }
+     
+     async coachEmail(){
+
+     }
+
+     async coachEmail(){
+        
+     }
+
+   async pictur(){
+        
+     }
+
+       async openingDate(){
+        
+     }
+
+       async closingDate(){
+        
+     }
+
+       async published(){
+        
+     }
+
+       async canUpdateOrderItem(){
+        
+     }
+
+       async canCheckReportSection(){
+        
+     }
+
+       async displayOrder(){
+        
+     }
+
+       async rebate(){
+        
+     }
+     
+       async pageSize(){
+        
+     }
+
+       async allowCustomerSelectSize(){
+        
+     }
+
+     Production section:
+     --------------------------->
+
+      async expandProductsSection(){
+
+      }
+
+      async addProductToTeamStore(){
+
+      }
+
+      async productNameInput(){
+
+      }
+
+      async searchButton(){
+
+      }
+
+      async selectProduct(){
+
+      }
+
+      async clickAddSelectedButton(){
+
+      }
+
+      
+

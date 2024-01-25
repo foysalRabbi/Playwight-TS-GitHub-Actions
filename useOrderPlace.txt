@@ -1,0 +1,33 @@
+
+orderPlace.clickTeamStoreInPublicSite()
+orderPlace.teamStoreNameInputInSearchBox()  
+orderPlace.clickSearchBtn()  
+orderPlace.clickTeamStoreName()
+orderPlace.productDetailsPage()
+
+Verify all field fill up with valid information:
+orderPlace.groupSelect()
+orderPlace.nameInput()
+orderPlace.numberInput()
+orderPlace.sizeSelect()
+
+Verify user able to add to cart:
+orderPlace.quantityInput()
+orderPlace.addToCart()
+orderPlace.shoppingCartBtn()
+orderPlace.termsOfServiceCheckboxClick()
+
+Verify user able to checkout all steps
+orderPlace.clkCheckout()
+orderPlace.billingAddress()
+orderPlace.shippingAddress()
+orderPlace.shippingMethod()
+orderPlace.paymentMethod()
+orderPlace.paymentInformation()
+orderPlace.confirmOrder()
+orderPlace.orderSuccessfullyMessage()
+
+
+
+
+

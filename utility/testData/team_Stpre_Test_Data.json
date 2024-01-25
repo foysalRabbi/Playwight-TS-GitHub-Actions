@@ -1,0 +1,61 @@
+{
+    "logins":
+    [
+        {
+            "user-id": "foysal@gmail.com",
+            "password": "12345"
+        },
+
+        {
+            "user-id": "jaber333@gmail.com",
+            "password": "12345"
+        }
+
+    ],
+
+    "nopOrderVarification":
+    [
+        {
+            "team-store-name": "HeadStrong Lehigh"
+            
+        },
+
+        {
+            "team-store-name": "Claire Lee"
+        }
+    ],
+
+    "teamStoreInfoData":
+    [
+        {
+            "Name": "Rehan Khan",
+            "Coach-name": "zarin@yourstore.com",
+            "open-date":"6/20/2023",
+            "close-date": "8/31/2023",
+
+        },
+        
+        {
+            "Name": "Argentina",
+            "Coach-name": "momentum@gmail.com",
+            "open-date":"6/20/2023",
+            "close-date": "8/31/2023"
+
+        }
+    ],
+
+    "productAddSection":
+    [
+        {
+            "product_name": "Elbow And Shoulder Protection"
+
+        },
+
+        {
+            "product_name": "Stealth Elbow Guards"
+
+        }
+    ]
+
+
+}
