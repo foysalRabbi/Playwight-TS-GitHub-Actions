@@ -8,7 +8,7 @@ jobs:
   PlaywrightTest:
     timeout-minutes: 60
     runs-on: ubuntu-latest
-    
+
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
@@ -41,7 +41,7 @@ jobs:
         to: shakhawat.swe@gmail.com
         subject: "Playwright Test Report for ${{ github.repository}}"
         body: |
-            Hi,
+            Hi <Client Name>
 
             Here is the test report for the latest commit on the main branch.
 
